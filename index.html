@@ -64,6 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -112,28 +113,33 @@ body {
  </head> 
  <body> 
   <div class="container"> 
-   <div class="card"> 
+   <div class="card" onclick="gotoSuamiPage()"> 
     <div class="circle"> 
      <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Codesphere.jpg" alt="" class="profile-pic"> 
     </div> 
     <p class="name">Suami</p> 
     <p class="birthdate">00/00/0000</p> 
    </div> 
-   <div class="card"> 
+   <div class="card" onclick="gotoIstriPage()"> 
     <div class="circle"> 
      <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Codesphere.jpg" alt="" class="profile-pic"> 
     </div> 
     <p class="name">Istri</p> 
     <p class="birthdate">00/00/0000</p> 
    </div> 
-  </div> <button class="next-button" onclick="nextPage()">Next</button> 
+  </div> 
+  <button class="next-button" onclick="nextPage()">Next</button> 
   <script>
         function nextPage() {
             window.location.href = "Home.html";
         }
 
-        function gotoIndexPage() {
-            window.location.href = "Home.html";
+        function gotoSuamiPage() {
+            window.location.href = "Info-suami.html";
+        }
+
+        function gotoIstriPage() {
+            window.location.href = "Info-istri.html";
         }
     </script> 
  </body>
